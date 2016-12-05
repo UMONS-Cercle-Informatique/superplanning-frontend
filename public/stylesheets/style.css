@@ -1,0 +1,25 @@
+/*Set title's font*/
+@font-face{
+	font-family: "BeautifulFont";
+	src: url("../fonts/Beautiful.ttf");
+}
+
+/*Main banner*/
+.jumbotron{
+	font-size: 20em;
+	font-family: "BeautifulFont",Arial,serif;
+	padding: 15em inherit;
+	color: black;
+	text-align: center;
+	background: url('../images/clock2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    min-height: 300px;
+}
+
+/*Set the background image*/
+html,body{
+	background-image: url("../images/background.png");
+}

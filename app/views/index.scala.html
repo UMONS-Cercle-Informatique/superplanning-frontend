@@ -1,0 +1,69 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(message: String)
+
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Welcome to Play") {
+	<div class = "container-fluid">
+      <div class = "jumbotron">
+        <h1>Superplanning</h1>
+        <h2>Par des étudiants,pour des étudiants</h2>
+      </div>
+      <div class="row col-sm-12">
+      	<!-- This nav contains the main menu -->
+        <nav class="col-sm-2">    
+          <ul class = "nav nav-pills nav-stacked">
+            <li class = "dropdown"> <a class = "dropdown-toggle" data-toggle = "dropdown" href ="#" > 
+              <span class = "glyphicon glyphicon-education"></span> Formations <span class = "caret"></span></a>
+              <ul class = "dropdown-menu">
+                  <li class = "dropdown-header">Emploi du temps</li>
+                  <li><a href = "#"> en grille</a></li>
+                  <li><a href = "#">en liste</a></li>
+                  <li><a href = "#">en planning</a></li>
+                  <li class = "divider"></li>
+                  <li><a href = "#">Récapitulatif des cours</a></li>
+                  <li><a href = "#">Cours annulés</a></li>
+              </ul>
+
+            </li>
+            <li class = "dropdown"> <a class = "dropdown-toggle" data-toggle = "dropdown" href = "#"> 
+             <span class = "glyphicon glyphicon-briefcase"></span> Salles <span class = "caret"></span> </a>
+             <ul class ="dropdown-menu">
+               <li class = "dropdown-header">Emploi du temps</li>
+                  <li><a href = "#"> en grille</a></li>
+                  <li><a href = "#">en liste</a></li>
+                  <li><a href = "#">en planning</a></li>
+             </ul> 
+            </li>
+            <li class = "dropdown"> <a class = "dropdown-toggle" data-toggle = "dropdown" href = "#"> 
+              <span class = "glyphicon glyphicon-book"></span> Matières <span class = "caret"></span></a>
+               <ul class = "dropdown-menu">
+                 <li class = "dropdown-header">Emploi du temps</li>
+                  <li><a href = "#"> en grille</a></li>
+                  <li><a href = "#">en liste</a></li>
+                  <li><a href = "#">en planning</a></li>
+               </ul> 
+            </li>
+            <li class = "dropdown"> <a class = "dropdown-toggle" data-toggle = "dropdown" href = "#"> 
+              <span class = "glyphicon glyphicon-plus"></span> Plus... <span class = "caret"></span></a> 
+               <ul class = "dropdown-menu">
+                 <li><a href = "#">Désactiver le mode accessible</a></li>
+               </ul>
+            </li>
+          </ul>
+        </nav>
+        <div id = "wrapper">
+          <div id = "myScheduler"></div>
+        </div>
+      <footer class = "row col-sm-12">
+          <p>Tous droits réservés par moi...</p>
+      </footer>
+      </div>
+    </div>
+}
