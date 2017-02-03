@@ -1,0 +1,153 @@
+@*
+ * This template takes a single argument, a String containing a
+ * message to display.
+ *@
+@(message: String)
+
+@*
+ * Call the `main` template with two arguments. The first
+ * argument is a `String` with the title of the page, the second
+ * argument is an `Html` object containing the body of the page.
+ *@
+@main("Welcome to Play") {
+	  <!-- Navigation -->
+    <nav class = "navbar navbar-default navbar-fixed-top topnav" role = "navigation">
+        <div class = "container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class = "navbar-header">
+                <button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = "#bs-example-navbar-collapse-1">
+                    <span class = "sr-only">Toggle navigation</span>
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                    <span class = "icon-bar"></span>
+                </button>
+                
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class = "collapse navbar-collapse" id = "bs-example-navbar-collapse-1">
+                <ul class = "nav navbar-nav">
+                    <li>
+                        <a href = "#">Home</a>
+                    </li>
+                    <li>
+                        <a href = "#about">About</a>
+                    </li>
+                    <li>
+                        <a href = "#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+   <!-- Header -->
+    <div class = "intro-header">
+        <div class = "container">
+
+            <div class = "row">
+                <div class = "col-lg-12">
+                    <div class = "intro-message">
+                        <h1>Superplanning</h1>
+                        <h3>Par des étudiants, pour des étudiants</h3>
+                        <hr class = "intro-divider">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.intro-header -->
+
+  <!-- Page Content -->
+
+    <a name = "about"></a>
+    <div class = "content-section-a">
+
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-lg-5 col-sm-6">
+                    <hr class = "section-heading-spacer">
+                    <div class = "clearfix"></div>
+                    <h2 class = "section-heading">Qui sommes nous ?</h2>
+                    <p class = "lead">Superplanning a été concu par le <a href = "https://www.facebook.com/groups/691261967684062/">Cercle info de l'Umons</a>, un groupe de 
+                    talentueux étudiants,passionnés d'informatique,venant de différentes sections.</p>
+                    <p class = "lead">Nous sommes motivés par le besoin d'offrir aux étudiants un moyen ergonomique et intuitif d'accéder à leurs horaires.</p>
+                </div>
+                <div class = "col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class = "img-responsive" src = "@routes.Assets.versioned("img/cercle-info.png")" alt = "Cerle info">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+     <div class = "content-section-b">
+
+        <div class = "container">
+            <div id = "wrapper">
+                  <div id = "myScheduler"></div> <!-- HTML element allowing use of scheduler -->
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-b -->
+
+  <a  name = "contact"></a>
+    <div class = "banner">
+
+        <div class = "container">
+
+            <div class = "row">
+                <div class = "col-lg-6">
+                    <h2>Rejoingnez le développement de Superplanning !</h2>
+                </div>
+                <div class = "col-lg-6">
+                    <ul class = "list-inline banner-social-buttons">
+                        <li>
+                            <a href = "https://github.com/UMONS-Cercle-Informatique" class="btn btn-default btn-lg">
+                                <i class = "fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.banner -->
+
+     <!-- Footer -->
+    <footer>
+        <div class = "container">
+            <div class = "row">
+                <div class = "col-lg-12">
+                    <ul class = "list-inline">
+                        <li>
+                            <a href = "#">Home</a>
+                        </li>
+                        <li class = "footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href = "#about">About</a>
+                        </li>
+                        <li class = "footer-menu-divider">&sdot;</li>
+                        <li>
+                            <a href = "#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <p class = "copyright text-muted small">Made by Cercle Info Umons</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+}
